@@ -1,0 +1,23 @@
+<div style="width: 50%">
+<form name="Cform" method="post" action="/operaciones/consultaContadores">
+    <h1>Consulta por Contadores</h1>
+    <br>
+    <p>Averigua la cantidad de estudiantes por programa.</p>
+    <div class="formcontainer">
+    <hr/>
+    <label for="year"><strong>Año de Cursada</strong></label><br>
+    <input type="number" name="year" min="2017" max="2019" placeholder="Ingrese el año.">   
+
+    <label for="region"><strong>Región</strong></label><br>
+    <input type="number" name="region" min="1" max="25" placeholder="Ingrese la región.">   
+
+    <div class="alertForm" id="formWarning" style = "display: none">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        Ingresar un año válido.
+    </div>
+
+    <button type="submit">Consultar</button>
+    </div>
+</form>
+<br>
+</div>   

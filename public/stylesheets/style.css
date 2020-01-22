@@ -1,0 +1,119 @@
+  /* stylo.css */
+  /* Remove the navbar's default margin-bottom and rounded borders */ 
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 500px}
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  /* Set black background color, white text and some padding */
+  .footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+  .Cuadrado {
+         font-family: Calibri;
+         border-radius: 15px 15px 15px 15px;
+         border: 4px solid #99cc33;
+         max-width: 700px;
+         max-height: auto; 
+         margin-top: 0px;                
+         padding:15px;
+         padding-bottom: 10px;
+         padding-top: 5px;
+  }        
+  .tg  {border-collapse:collapse;border-spacing:0;border-width:1px;border-style:solid;border-color:#ccc;margin:0px auto;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 10px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 10px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+  .tg .tg-l93j{font-weight:bold;font-size:16px;border-color:inherit;text-align:center;vertical-align:top}
+  .tg .tg-kyy7{background-color:#f9f9f9;border-color:inherit;text-align:center;vertical-align:middle}
+  form {
+        border: 5px solid #f1f1f1;
+  }
+  input[type=text], input[type=password], input[type=number] {
+        padding: 16px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        width: 100%;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+  }
+  button {
+        background-color: #8ebf42;
+        color: white;
+        padding: 14px 0;
+        margin: 10px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+  }
+  button:hover {
+        opacity: 0.8;
+  }
+  .formcontainer {
+        text-align: left;
+        margin: 24px 50px 12px;
+  }
+  .alertForm {
+          padding: 10px;
+          background-color: goldenrod;
+          color: white;
+  }
+  .closebtn {
+          margin-left: 15px;
+          color: white;
+          font-weight: bold;
+          float: right;
+          font-size: 22px;
+          line-height: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+  }   
+  .closebtn:hover {
+          color: black;
+  }
+  img.left {
+    max-width:60%;
+    height: auto;
+    object-fit: contain;
+  }
+  .container-index {
+    display: flex;
+  }
+  .box-index {
+      margin: 1%;
+      padding: 1%;
+      flex-basis: 50%;
+      background: lightgrey;
+      text-align: center;
+      color: black;
+      text-decoration-line: none;
+      border-radius: 25px;
+      border: 2px solid #73AD21;
+  }  
+  @media screen and (max-width: 700px) {
+          .tg {width: auto }
+          .tg col {width: auto }
+          .tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}
+          .sidenav {
+              height: auto;
+              padding: 15px;
+          }
+          .row.content {height:auto;} /* redundante con funcion resize? */
+          .container-index {
+            flex-direction: column;
+          }
+   }
+          

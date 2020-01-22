@@ -1,0 +1,34 @@
+<div style="width: 50%">
+<form name="Mform" method="post" onsubmit="validate(event)" action="/operaciones/consultaMultiple">
+    <h1>Consulta de Entrada Múltiple</h1>
+    <br>
+    <p>Busca hasta 10 entradas al azar en nuestra nominalización.</p>
+    <div class="formcontainer">
+    <hr/>
+    <label for="year"><strong>Año de Cursada</strong></label><br>
+    <input list="year" type="text" placeholder="Seleccione el año." name="year">
+    <datalist id="year">
+        <option value="2019" op-id="1"></option>
+        <option value="2018" op-id="2"></option>
+        <option value="2017" op-id="3"></option>
+    </datalist>   
+
+    <label for="distrito"><strong>Distrito</strong></label><br>
+    <input list="distritos" type="text" placeholder="Seleccione el distrito." name="distrito">
+    <datalist id="distritos"></datalist>
+
+    <label for="oferta educativa"><strong>Programa Educativo</strong></label><br>
+    <input list="ofertas" type="text" placeholder="Seleccione el programa." name="oferta">
+    <datalist id="ofertas"></datalist>
+
+    <div class="alertForm" id="formWarning" style = "display: none">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        Favor de completar al menos un campo.
+    </div>
+
+    <button type="submit">Consultar</button>
+    </div>
+    
+</form>
+<br>
+</div>

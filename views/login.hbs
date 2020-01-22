@@ -1,0 +1,20 @@
+<div style="width: 50%">
+<form name="Lform" method="post" action="/login">
+    <h1>Log-in</h1>
+    <div class="formcontainer">
+    <hr/>
+    <label for="user"><strong>Usuario</strong></label>
+    <br>
+    <input type="text" placeholder="Ingrese su usuario." name="user" required>  {{!-- value="{{user}}" --}}
+
+    <label for="pass"><strong>Constraseña</strong></label>
+    <br>
+    <input type="password" placeholder="Ingrese su contraseña." name="pwd" required>
+    
+    {{{showAlert}}}
+
+    <button type="submit">Iniciar Sesión</button>
+    </div>
+</form>
+<br>
+</div>
